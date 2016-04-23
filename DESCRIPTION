@@ -1,6 +1,6 @@
 Package: BetaBit
-Title: Mini Games from The Beta and Bit Project
-Version: 1.0
+Title: Mini Games from Adventures of Beta and Bit
+Version: 1.2.0
 Authors@R: c(
     person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
     person("Witold", "Chodor", email = "witoldchodor@gmail.com", role = c("trl")),
