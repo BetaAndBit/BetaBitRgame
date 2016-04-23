@@ -161,6 +161,6 @@ frequon <- function(...) {
    cat(txt$errorSubject)
 
  if(!is.null(args$hint) && args$hint == TRUE)
-   hintf(txt$level)
+   hintf(.pouch$level)
 }
 
