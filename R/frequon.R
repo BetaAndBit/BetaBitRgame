@@ -36,7 +36,7 @@
 frequon <- function(...) {
  args <- list(...)
 
- structure(c("uILN: 154VY7278UX44650YWW2YY39YY2Y5X69@NZRO.GLI\ngL: X81632WXV28XZ740U2U2503656U3W62Z@NZRO.GLI\nhFYQVXG: bLF NZB YV RMGVIVHGVW\n\nkVDMZ TIFKZ (MZADZć) NZ KILYOVN.\nnFHR HRę WLHGZć WL SZHłZ ANZIłVTL KIABQZXRVOZ YB XLśGZN.\naLHGZłB KL MRN... 3  DRZWLNLśXR: `TFMH`, `ZMW` LIZA `ILHVH`,\nWL PGóIBXS MRV NZQą WLHGęKF, ZOV KLWVQIAVDZQą, żV D GBXS\nDRZWLNLśXRZXS NLżV YBć XLś RMGVIVHFQąXVTL. aDIZXZQą HRę WL xRVYRV\nA KLNLXą, TWBż HłBHAVOR, żV QVHGVH WLYIB D ILADRąABDZMRF GZPRXS\nKILYOVNóD.\n\nxAB AVXSXVHA WLłąXABć WL AVHKLłF R KLNóX RN D ILADRąAZMRF GVTL\nKILYOVNF?\n\nrU BLF DZMG GL SVOK, KOVZHV GBKV:\n`UIVJFLM(HFYQVXG = \"iV: zHPRMT ULI SVOK\", XLMGVMG = \"gVCG LU GSVHV NVHHZTVH BLF SZEV ZXXVHH GL\")`\nHL ZH DV XLFOW IVZW GSV NVHHZTV GLL.\n\niVNVNYVI: ZMB GRNV BLF DZMG, BLF XZM TVG HLNV KRVXV LU ZWERXV, QFHG\nGBKV: `UIVJFLM(SRMG=gifv)`.\n",
+ txt <- structure(c("uILN: 154VY7278UX44650YWW2YY39YY2Y5X69@NZRO.GLI\ngL: X81632WXV28XZ740U2U2503656U3W62Z@NZRO.GLI\nhFYQVXG: bLF NZB YV RMGVIVHGVW\n\nkVDMZ TIFKZ (MZADZć) NZ KILYOVN.\nnFHR HRę WLHGZć WL SZHłZ ANZIłVTL KIABQZXRVOZ YB XLśGZN.\naLHGZłB KL MRN... 3  DRZWLNLśXR: `TFMH`, `ZMW` LIZA `ILHVH`,\nWL PGóIBXS MRV NZQą WLHGęKF, ZOV KLWVQIAVDZQą, żV D GBXS\nDRZWLNLśXRZXS NLżV YBć XLś RMGVIVHFQąXVTL. aDIZXZQą HRę WL xRVYRV\nA KLNLXą, TWBż HłBHAVOR, żV QVHGVH WLYIB D ILADRąABDZMRF GZPRXS\nKILYOVNóD.\n\nxAB AVXSXVHA WLłąXABć WL AVHKLłF R KLNóX RN D ILADRąAZMRF GVTL\nKILYOVNF?\n\nrU BLF DZMG GL SVOK, KOVZHV GBKV:\n`UIVJFLM(HFYQVXG = \"iV: zHPRMT ULI SVOK\", XLMGVMG = \"gVCG LU GSVHV NVHHZTVH BLF SZEV ZXXVHH GL\")`\nHL ZH DV XLFOW IVZW GSV NVHHZTV GLL.\n\niVNVNYVI: ZMB GRNV BLF DZMG, BLF XZM TVG HLNV KRVXV LU ZWERXV, QFHG\nGBKV: `UIVJFLM(SRMG=gifv)`.\n",
              "uILN: 154VY7278UX44650YWW2YY39YY2Y5X69@NZRO.GLI\ngL: X81632WXV28XZ740U2U2503656U3W62Z@NZRO.GLI\nhFYQVXG: uIVJFVMXRVH\n\ndV ZIV HL TOZW BLF DZMG GL SVOK FH!\n\ngSZMP BLF ULI GSV NVHHZTV, RG OLLPH RMGVIVHGRMT... sLDVEVI, GSRH GVCG\nRH GL OLMT GL YV LMV KZHHDLIW DV ZIV HVVPRMT. gSRH NFHG YV HLNV XLWVW\nNVHHZTV, RU LMOB DV XLFOW PMLD GSV PVB...\n\nyFG OVG`H GZPV Z OLLP, GSV `K` OVGGVI ZKKVZIH EVIB LUGVM. zMW\n`R` WLVH`G. rM VMTORHS OZMTFZTV OVGGVI `V` DLFOW LXXFIVH\nNLHG LUGVM. rU DV DLFOW PMLD SLD LUGVM VZXS OVGGVI RH FHVW RM\nGSV NVHHZTV, DV XLFOW XLNKZIV GSVN DRGS PMLDM VMTORHS\nOVGGVI UIVJFVMXRVH! hL OVG`H GL GSRH!\n\ndV ZIV TLRMT GL KIVKZIV WZGZ ZYLFG UIVJFVMXRVH LU OVGGVIH\nRM VMTORHS, HL RU BLF XLFOW URMW GSV UIVJFVMXRVH RM GSV NVHHZTVH,\nGSZG DLFOW YV ZDVHLNV (GL GIAVYZ ANRVMRX :k).\n\nhVMW FH IVKOB: `UIVJFLM(HFYQVXG = \"iV: uIVJFVMXRVH\", XLMGVMG = `UIVJ`)` ZH HLLM ZH BLF\nDROO URMRHS. `UIVJ` RH GSV EVXGLI LU UIVJFVMXRVH ULI VZXS OVGGVI.\nkOVZHV, IVNVNYVI GL MZNV GSRH EVXGLI DRGS IVHKVXGREV OVGGVIH!\n",
              "uILN: 154VY7278UX44650YWW2YY39YY2Y5X69@NZRO.GLI\ngL: X81632WXV28XZ740U2U2503656U3W62Z@NZRO.GLI\nhFYQVXG: gIZMHXIRKGRLM\n\ntIVZG QLY! mLD, DSVM DV PMLD DSRXS OVGGVIH ZIV FHVW NLHG LUGVM\nZMW DSRXS ZIV GSV OVZHG XLNNLM, DV XZM XLNYRMV GSVN DRGS PMLDM\nVMTORHS UIVJFVMXRVH LU OVGGVIH. dV SZEV KIVKZIVW ZMW ZGGZXSVW\nGSV `vMTORHSoVGGVIuIVJFVMXB` WZGZHVG. rG XLMGZRMH IVOZGREV\nUIVJFVMXRVH LU OVGGVIH RM GSV VMTORHS OZMTFZTV.\n\nmLD BLF XZM HFYHGRGFGV LOW XRKSVIVW OVGGVIH DRGS GSV MVD\nVMTORHS OVGGVIH. xZM BLF HSLD FH BLFI IVHFOGH?\n\nhVMW FH IVKOB: `UIVJFLM(HFYQVXG = \"iV: gIZMHXIRKGRLM\", XLMGVMG = \"GVCGBLFDROOTVG\")`.\ndV DRHS BLF OFXP!\n\nyVHG IVTZIWH!\n",
              "uILN: 154VY7278UX44650YWW2YY39YY2Y5X69@NZRO.GLI\ngL: X81632WXV28XZ740U2U2503656U3W62Z@NZRO.GLI\nhFYQVXG: pVB\n\ndVOO WLMV! mLD DV ZIV HL XOLHV! lFI NVHHZTV OLLPH Z ORGGOV YRG UZNRORZI,\nGSVIV ZIV VEVM HLNV DLIWH DV PMLD. yFG GSVIV ZIV ZOHL HGROO DLIWH,\nOLLPRMT HGIZMTV. rG NVZMH GSZG LFI PVB RH MLG UFOOB\nXLIIVXG, ZMW DV MVVW GL RMEVHGRTZGV GSVHV OVGGVIH, GSZG DVIV\nNRHGIZMHOZGVW.\n\ngSVIV RH LMV RWVZ SLD GL WL GSRH.\n\naORXANB DHABHGPRV DBIZAB, GV, PGóIV KLQZDRZQą HRę MZQXAęśXRVQ HZ WOZ MZH łZGDV WL\nKLKIZDRVMRZ. gV PGóIV KLQZDRZQą HRę MZQIAZWARVQ YBć NLżV Hą łZGDL ILAKLAMZDZOMBNR\nIAVXALDMRPZNR?\n\ngZPV ZWEZMGZTV LU `GLK100XLNNLMdLIWH`.\n\ngBKV:\n`UIVJFLM( HFYQVXG=\"iV: pVB\", XLMGVMG=X(LOW = \"ZYXWVU....A\", MVD = \"MVDOVGGVIHIVHKVXGREVOB\"))`\nDSVIV `LOW` ZIV GSV OVGGVIH RM GSV XLWV`H HVMHV ZMW `MVD` ZIV URGGVW IVZO OVGGVIH.\n",
@@ -84,30 +84,30 @@ frequon <- function(...) {
                '6' = 're: language in and message',
                '7' = 're: password')
  if( length(args) == 0 ){
-   cat(intro)
+   cat(txt$intro)
    level <<- 0
  } else{
-     if(!is.null(args$hint) && args$hint == TRUE) hintf(level) else {
+     if(!is.null(args$hint) && args$hint == TRUE) hintf(txt$level) else {
        if( tolower(args$subject) == subjects[1] ){
          if( digest(args$content) == "6ba57621bc24fe10f21bc8ff7c178b39" ){
            level <<- 1
            taskf(level)
-         } else if(level == 0) cat(errorIntro)
+         } else if(level == 0) cat(txt$errorIntro)
        }
        # 1. podaj wektor częstości
        if( tolower(args$subject) == subjects[2] ){
          if(is.null(names(args$content))){
-           cat(errorNoNAMES)
+           cat(txt$errorNoNAMES)
          } else{
            if( any(is.na(args$content)) || any(is.na(names(args$content))) )
-             cat(errorNAs) else{
+             cat(txt$errorNAs) else{
                if(!all(names(args$content[letters])==letters))
-                 cat(errorLetters)
+                 cat(txt$errorLetters)
                if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
                  level <<- 2  # przypisanie podwójne, żeby w każdej chwili można było
                  # wywołać hinta dla odpowiedniego poziomu gry.
                  taskf(level)
-               } else cat(errorFrequencies)
+               } else cat(txt$errorFrequencies)
              }
          }
        }
@@ -117,14 +117,14 @@ frequon <- function(...) {
          if( digest(In) == 'd5bc6f3d64e0199e08d029ee25d835a2' ){
            level <<- 3
            taskf(level)
-         } else cat(errorDecipher)
+         } else cat(txt$errorDecipher)
        }
        ## 3. przetłumacz WSZYSTKIE literki (znajdź pełny klucz)
        if( tolower(args$subject) ==  subjects[4] ){
          if( any(names(args$content) != c("old","new")) | length(args$content) != 2 )
            cat(errorKey1) else{
              if( any(nchar(args$content) != c(26,26)) )
-               cat(errorKey2) else{
+               cat(txt$errorKey2) else{
                  ## dopuszczam, że gracz może nie podać liter we wskazanej kolejności "abc...xyz"
                  ## jeśli tylko podaje je poprawnie.
                  ord <- order( strsplit(args$content['old'], "")[[1]] )
@@ -132,38 +132,38 @@ frequon <- function(...) {
                  if( digest(In) == '277d35cce1043607f15f83fbc36b75ff' ){
                    level <<- 4
                    taskf(level)
-                 } else cat(errorBadKey)
+                 } else cat(txt$errorBadKey)
                }
            }
        }
        ## 4. znajdź kolejny szyfr
        if( tolower(args$subject) == subjects[5] ){
          if( strsplit(args$subject, " ")[[1]][3] %in% c('and', 'guns') ){
-           cat(errorBadX)
+           cat(txt$errorBadX)
          } else {
            if( strsplit(args$subject, " ")[[1]][3] == "guns" ){
-             cat(errorBadX2)
+             cat(txt$errorBadX2)
            }
          }
          In <- gsub("[^A-Z]","", toupper(args$content))
          if( digest(In) == 'e876c26d9d8bad8028cefb95eb54df21' ){
            level <<- 5
            taskf(level)
-         } else cat(errorBadAND)
+         } else cat(txt$errorBadAND)
        }
        ## 6. zlicz długości słów
        if( tolower(args$subject) == subjects[6] ){
          if( ! any(names(args) %in% "attachment") ){
-           cat(errorAttachment)
+           cat(txt$errorAttachment)
          } else {
            if( !all(names(args$attachment) %in% names(wikiquotes)) ){
-             cat(errorWikiNames)
+             cat(txt$errorWikiNames)
            }
            if( digest(args$content[as.character(1:13)]) == "0aac2628993a796da4b5408f8f9d0ef1" &&
                digest(args$attachment[names(wikiquotes)]) == "6e6b01872252d622733fcc3e0d29eee6" ){
              level <<- 6
              taskf(level)
-           } else cat(errorLengths)
+           } else cat(txt$errorLengths)
          }
        }
        ## 7.  podanie języka
@@ -171,19 +171,19 @@ frequon <- function(...) {
          if( digest(tolower(args$content)) == '939ad54fa39990afd160056465120f72'){
            level <<- 7
            taskf(level)
-         } else cat(errorLanguage)
+         } else cat(txt$errorLanguage)
        }
        ## 8. podanie hasła
        if( tolower(args$subject) == subjects[8] ){
          if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' )
-           cat(outro) else cat(errorEnd)
+           cat(txt$outro) else cat(txt$errorEnd)
        }
      }
    }
  if( length(args)>0 && !c("content")%in%names(args) && names(args)!='hint')
-   cat(errorContent)
+   cat(txt$errorContent)
  if( length(args)>0 && !c("subject")%in%names(args) && names(args)!='hint')
-   cat(errorSubject)
+   cat(txt$errorSubject)
 
 }
 
