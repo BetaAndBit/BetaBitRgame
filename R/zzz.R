@@ -1,11 +1,12 @@
 .onAttach <- function(...) {
   BB.start = "
-___      _                       _   ___ _ _      ___
-| _ ) ___| |_ __ _   __ _ _ _  __| | | _ |_) |_   / __|__ _ _ __  ___ ___
-| _ \\/ -_)  _/ _` | / _` | ' \\/ _` | | _ \\ |  _| | (_ / _` | '  \\/ -_|_-<
-|___/\\___|\\__\\__,_| \\__,_|_||_\\__,_| |___/_|\\__|  \\___\\__,_|_|_|_\\___/__/
+ _____     _                    _    _____ _ _      _____
+| __  |___| |_ ___    ___ ___ _| |  | __  |_| |_   |   __|___ _____ ___ ___
+| __ -| -_|  _| .'|  | .'|   | . |  | __ -| |  _|  |  |  | .'|     | -_|_ -|
+|_____|___|_| |__,|  |__,|_|_|___|  |_____|_|_|    |_____|__,|_|_|_|___|___|
 
-Choose the game. To start just type the name of the selected game in the console with parentheses.
+Choose your game. Just type the name of the selected game in the console.
+It's a function so do not forget about parentheses!
 
 1. proton()
 2. frequon()
