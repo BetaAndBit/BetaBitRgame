@@ -97,7 +97,7 @@ frequon <- function(...) {
    ## 3. przetłumacz WSZYSTKIE literki (znajdź pełny klucz)
    if( tolower(args$subject) ==  subjects[4] ){
      if( any(names(args$content) != c("old","new")) | length(args$content) != 2 )
-       cat(errorKey1) else{
+       cat(txt$errorKey1) else{
          if( any(nchar(args$content) != c(26,26)) )
            cat(txt$errorKey2) else{
              ## dopuszczam, że gracz może nie podać liter we wskazanej kolejności "abc...xyz"
