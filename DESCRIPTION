@@ -4,6 +4,7 @@ Version: 1.2.0
 Authors@R: c(
     person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
     person("Witold", "Chodor", email = "witoldchodor@gmail.com", role = c("trl")),
+    person("Katarzyna", "Fak", role = c("aut")),
     person("Foundation", "SmarterPoland.pl", email = "smarterpoland@gmail.com", role = c("cph")))
 Description: 'The Proton Game' is a console-based data-crunching game for younger and older data scientists.
   Act as a data-hacker and find Slawomir Pietraszko's credentials to the Proton server.

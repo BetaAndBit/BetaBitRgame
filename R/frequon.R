@@ -148,10 +148,11 @@ frequon <- function(...) {
          if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' )
            cat(txt$outro) else cat(txt$errorEnd)
        }
-   }
- if( length(args)>0 && !(c("content") %in% names(args)) && !('hint' %in% names(args)))
+ }
+
+ if( length(args)>0 && !("content" %in% names(args)) && !('hint' %in% names(args)))
    cat(txt$errorContent)
- if( length(args)>0 && !(c("subject") %in% names(args)) && !('hint' %in% names(args)))
+ if( length(args)>0 && !("subject" %in% names(args)) && !('hint' %in% names(args)))
    cat(txt$errorSubject)
 
  if(!is.null(args$hint) && args$hint == TRUE)
