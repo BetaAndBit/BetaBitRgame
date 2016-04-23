@@ -60,7 +60,7 @@ frequon <- function(...) {
        if( tolower(args$subject) == subjects[1] ){
          if( digest(args$content) == "6ba57621bc24fe10f21bc8ff7c178b39" ){
            .pouch$level <- 1
-           taskf(level)
+           taskf(.pouch$level)
          } else if(.pouch$level == 0) cat(txt$errorIntro)
        }
 
