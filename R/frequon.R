@@ -21,11 +21,6 @@
 #' \code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
 #'
 #' ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
-#' By transferring a donation on the foundation's account, which is
-#' shown on site \url{http://smarterpoland.pl/index.php/fundacja/}, you will help
-#' us to create other educational games. Even an amount of $10 will facilitate
-#' creation and maintenance of subsequent educational projects!
-#' Thank you!
 #'
 #' @author
 #' Katarzyna Fak - the idea and the implementation,
