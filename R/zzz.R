@@ -8,7 +8,7 @@ ___      _                       _   ___ _ _      ___
 Choose the game. To start just type the name of the selected game in the console with parentheses.
 
 1. proton()
-2. crypton()
+2. frequon()
 "
 
      packageStartupMessage(BB.start)
@@ -23,19 +23,4 @@ dcode <- function(tex) {
     paste(let[x], collapse="")
   })
 }
-
-
-# names for next functions
-# newton
-# nekton - wszystko co plywa
-# parton - czastka (np. kwarki i gluony)
-# mutton - owca
-# photon
-# carton - opakowanie
-# button
-# skeleton
-# singleton
-# piston - tlok
-# ponton
-# pluton
 
