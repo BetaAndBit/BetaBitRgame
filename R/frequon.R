@@ -75,10 +75,115 @@ frequon <- function(...) {
                "errorWikiNames", "errorLengths", "errorLanguage", "errorEnd",
                "errorAttachment", "errorContent", "errorSubject"))
 
-
-
-
-
+ subjects <- c('0' = 're: asking for help',
+               '1' = 're: frequencies',
+               '2' = 're: transcription',
+               '3' = 're: key',
+               '4' = 're: next text: and',
+               '5' = 're: lengths in the text',
+               '6' = 're: language in and message',
+               '7' = 're: password')
+ if( length(args) == 0 ){
+   cat(intro)
+   level <<- 0
+ } else{
+     if(!is.null(args$hint) && args$hint == TRUE) hintf(level) else {
+       if( tolower(args$subject) == subjects[1] ){
+         if( digest(args$content) == "6ba57621bc24fe10f21bc8ff7c178b39" ){
+           level <<- 1
+           taskf(level)
+         } else if(level == 0) cat(errorIntro)
+       }
+       # 1. podaj wektor częstości
+       if( tolower(args$subject) == subjects[2] ){
+         if(is.null(names(args$content))){
+           cat(errorNoNAMES)
+         } else{
+           if( any(is.na(args$content)) || any(is.na(names(args$content))) )
+             cat(errorNAs) else{
+               if(!all(names(args$content[letters])==letters))
+                 cat(errorLetters)
+               if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
+                 level <<- 2  # przypisanie podwójne, żeby w każdej chwili można było
+                 # wywołać hinta dla odpowiedniego poziomu gry.
+                 taskf(level)
+               } else cat(errorFrequencies)
+             }
+         }
+       }
+       ## 2. podstaw literki z EnglishLetterFrequency
+       if( tolower(args$subject) == subjects[3] ){
+         In <- gsub("[^A-Z]","", toupper(args$content))
+         if( digest(In) == 'd5bc6f3d64e0199e08d029ee25d835a2' ){
+           level <<- 3
+           taskf(level)
+         } else cat(errorDecipher)
+       }
+       ## 3. przetłumacz WSZYSTKIE literki (znajdź pełny klucz)
+       if( tolower(args$subject) ==  subjects[4] ){
+         if( any(names(args$content) != c("old","new")) | length(args$content) != 2 )
+           cat(errorKey1) else{
+             if( any(nchar(args$content) != c(26,26)) )
+               cat(errorKey2) else{
+                 ## dopuszczam, że gracz może nie podać liter we wskazanej kolejności "abc...xyz"
+                 ## jeśli tylko podaje je poprawnie.
+                 ord <- order( strsplit(args$content['old'], "")[[1]] )
+                 In <- strsplit(args$content['new'], "")[[1]][ord]
+                 if( digest(In) == '277d35cce1043607f15f83fbc36b75ff' ){
+                   level <<- 4
+                   taskf(level)
+                 } else cat(errorBadKey)
+               }
+           }
+       }
+       ## 4. znajdź kolejny szyfr
+       if( tolower(args$subject) == subjects[5] ){
+         if( strsplit(args$subject, " ")[[1]][3] %in% c('and', 'guns') ){
+           cat(errorBadX)
+         } else {
+           if( strsplit(args$subject, " ")[[1]][3] == "guns" ){
+             cat(errorBadX2)
+           }
+         }
+         In <- gsub("[^A-Z]","", toupper(args$content))
+         if( digest(In) == 'e876c26d9d8bad8028cefb95eb54df21' ){
+           level <<- 5
+           taskf(level)
+         } else cat(errorBadAND)
+       }
+       ## 6. zlicz długości słów
+       if( tolower(args$subject) == subjects[6] ){
+         if( ! any(names(args) %in% "attachment") ){
+           cat(errorAttachment)
+         } else {
+           if( !all(names(args$attachment) %in% names(wikiquotes)) ){
+             cat(errorWikiNames)
+           }
+           if( digest(args$content[as.character(1:13)]) == "0aac2628993a796da4b5408f8f9d0ef1" &&
+               digest(args$attachment[names(wikiquotes)]) == "6e6b01872252d622733fcc3e0d29eee6" ){
+             level <<- 6
+             taskf(level)
+           } else cat(errorLengths)
+         }
+       }
+       ## 7.  podanie języka
+       if( tolower(args$subject) == subjects[7] ){
+         if( digest(tolower(args$content)) == '939ad54fa39990afd160056465120f72'){
+           level <<- 7
+           taskf(level)
+         } else cat(errorLanguage)
+       }
+       ## 8. podanie hasła
+       if( tolower(args$subject) == subjects[8] ){
+         if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' )
+           cat(outro) else cat(errorEnd)
+       }
+     }
+   }
+ if( length(args)>0 && !c("content")%in%names(args) && names(args)!='hint')
+   cat(errorContent)
+ if( length(args)>0 && !c("subject")%in%names(args) && names(args)!='hint')
+   cat(errorSubject)
 
 }
 
