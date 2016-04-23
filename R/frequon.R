@@ -149,9 +149,9 @@ frequon <- function(...) {
            cat(txt$outro) else cat(txt$errorEnd)
        }
    }
- if( length(args)>0 && !c("content") %in% names(args) && names(args)!='hint')
+ if( length(args)>0 && !(c("content") %in% names(args)) && !('hint' %in% names(args)))
    cat(txt$errorContent)
- if( length(args)>0 && !c("subject") %in% names(args) && names(args)!='hint')
+ if( length(args)>0 && !(c("subject") %in% names(args)) && !('hint' %in% names(args)))
    cat(txt$errorSubject)
 
  if(!is.null(args$hint) && args$hint == TRUE)
