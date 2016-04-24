@@ -52,7 +52,7 @@ frequon <- function(...) {
    return()
  }
 
- subjects <- c('0' = 're: asking for help',
+ subjects <- c('0' = 're: interested?',
                '1' = 're: frequencies',
                '2' = 're: transcription',
                '3' = 're: key',
