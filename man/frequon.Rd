@@ -15,18 +15,13 @@ The \code{frequon} function is used for solving problems in the data-based game 
 }
 \details{
 Every time when some additional hints are needed one should add
-\code{hint=TRUE} argument to the \code{proton} function.
+\code{hint=TRUE} argument to the \code{frequon} function.
 
-In order to get more information about a user on the Proton server
-one should pass \code{action = "login"}, \code{login="XYZ"} arguments
-to the \code{proton} function.
+In this game you are in contact with group of people that are going to stop terrorists.
+You can communicate with them through \code{frequon} function.
 
-In order to log into the Proton server one should pass \code{action = "login"},
-\code{login="XYZ"}, \code{password="ABC"} arguments to the \code{proton} function.
-If the password matches login, then one will receive a message about successful login.
-
-In order to log into a server different from Proton one should pass
-\code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
+To each call add \code{subject} parameter that will point which message you are answering.
+Add \code{content} parameter. It'c value should match the request.
 
 ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 }
