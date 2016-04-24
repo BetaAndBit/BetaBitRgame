@@ -3,5 +3,4 @@
 export(crypton)
 export(frequon)
 export(proton)
-import(dplyr)
 importFrom(digest,digest)
