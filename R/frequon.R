@@ -9,11 +9,11 @@
 #' @details Every time when some additional hints are needed one should add
 #' \code{hint=TRUE} argument to the \code{frequon} function.
 #'
-#' In this game you are in contact with group of people that are going to stop terrorists.
+#' In this game you are in contact with a group of people that are going to stop terrorists.
 #' You can communicate with them through \code{frequon} function.
 #'
-#' To each call add \code{subject} parameter that will point which message you are answering.
-#' Add \code{content} parameter. It'c value should match the request.
+#' In each call add \code{subject} parameter that will indicate which message you are answering.
+#' Add \code{content} parameter. It's value should match the request.
 #'
 #' ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 #'
@@ -64,7 +64,7 @@ frequon <- function(...) {
      } else if(.pouch$level == 0) cat(txt$errorIntro)
    }
 
-   # 1. podaj wektor częstości
+   # 1. give a vector of frequencies
    if( tolower(args$subject) == subjects[2] ){
      if(is.null(names(args$content))){
        cat(txt$errorNoNAMES)
@@ -74,14 +74,14 @@ frequon <- function(...) {
            if(!all(names(args$content[letters])==letters))
              cat(txt$errorLetters)
            if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
-             .pouch$level <- 2  # przypisanie podwójne, żeby w każdej chwili można było
-             # wywołać hinta dla odpowiedniego poziomu gry.
+             .pouch$level <- 2  # a double assignement to be able to call hint on the 
+             # proper level of the game.
              taskf(.pouch$level )
            } else cat(txt$errorFrequencies)
          }
      }
    }
-   ## 2. podstaw literki z EnglishLetterFrequency
+   ## 2. substitute letters from EnglishLetterFrequency
    if( tolower(args$subject) == subjects[3] ){
      In <- gsub("[^A-Z]","", toupper(args$content))
      if( digest(In) == 'd5bc6f3d64e0199e08d029ee25d835a2' ){
@@ -89,14 +89,14 @@ frequon <- function(...) {
        taskf(.pouch$level )
      } else cat(txt$errorDecipher)
    }
-   ## 3. przetłumacz WSZYSTKIE literki (znajdź pełny klucz)
+   ## 3. translate ALL of the letters (find a complete key)
    if( tolower(args$subject) ==  subjects[4] ){
      if( any(names(args$content) != c("old","new")) | length(args$content) != 2 )
        cat(txt$errorKey1) else{
          if( any(nchar(args$content) != c(26,26)) )
            cat(txt$errorKey2) else{
-             ## dopuszczam, że gracz może nie podać liter we wskazanej kolejności "abc...xyz"
-             ## jeśli tylko podaje je poprawnie.
+             ## I assume that a player may not give the letters in the indicated order "abc...xyz"
+             ## if only they are correct.
              ord <- order( strsplit(args$content['old'], "")[[1]] )
              In <- strsplit(args$content['new'], "")[[1]][ord]
              if( digest(In) == '277d35cce1043607f15f83fbc36b75ff' ){
@@ -106,7 +106,7 @@ frequon <- function(...) {
            }
        }
    }
-   ## 4. znajdź kolejny szyfr
+   ## 4. find another cipher
    if( tolower(args$subject) == subjects[5] ){
      if( strsplit(args$subject, " ")[[1]][3] %in% c('and', 'guns') ){
        cat(txt$errorBadX)
@@ -120,8 +120,8 @@ frequon <- function(...) {
        .pouch$level  <- 5
        taskf(.pouch$level )
      } else cat(txt$errorBadAND)
-   }
-   ## 6. zlicz długości słów
+   } 
+   ## 5. count the words' lengths
    if( tolower(args$subject) == subjects[6] ){
      if( ! any(names(args) %in% "attachment") ){
        cat(txt$errorAttachment)
@@ -136,14 +136,14 @@ frequon <- function(...) {
        } else cat(txt$errorLengths)
      }
    }
-   ## 7.  podanie języka
+   ## 6. give a language
    if( tolower(args$subject) == subjects[7] ){
      if( digest(tolower(args$content)) == '939ad54fa39990afd160056465120f72'){
        .pouch$level  <- 7
        taskf(.pouch$level )
      } else cat(txt$errorLanguage)
    }
-   ## 8. podanie hasła
+   ## 7. give a password
    if( tolower(args$subject) == subjects[8] ){
      if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' )
        cat(txt$outro) else cat(txt$errorEnd)
