@@ -44,7 +44,7 @@ frequon <- function(...) {
  if( length(args) == 0 ){
    cat(txt$intro)
    .pouch$level <- 0
-   return()
+   return(invisible(NULL))
  }
 
  subjects <- c('0' = 're: interested?',
