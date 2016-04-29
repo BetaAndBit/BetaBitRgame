@@ -92,7 +92,7 @@ frequon <- function(...) {
    }
    ## 3. translate ALL of the letters (find a complete key)
    if( tolower(args$subject) ==  subjects[4] ){
-     if( any(names(args$content) != c("old","new")) | length(args$content) != 2 )
+     if( length(args$content) != 2 || any(sort(names(args$content)) != c("new","old")) )
        cat(txt$errorKey1) else{
          if( any(nchar(args$content) != c(26,26)) )
            cat(txt$errorKey2) else{
