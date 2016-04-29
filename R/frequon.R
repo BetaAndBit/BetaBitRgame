@@ -71,7 +71,8 @@ frequon <- function(...) {
      } else{
        if( any(is.na(args$content)) || any(is.na(names(args$content))) )
          cat(txt$errorNAs) else{
-           if(!all(names(args$content[letters])==letters))
+           if((length(na.omit(names(args$content[letters]))) != length(letters)) ||
+              (!all(names(args$content[letters])==letters)))
              cat(txt$errorLetters)
            if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
              .pouch$level <- 2  # a double assignement to be able to call hint on the
