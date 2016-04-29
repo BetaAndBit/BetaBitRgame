@@ -134,10 +134,11 @@ frequon <- function(...) {
        if( !all(names(args$attachment) %in% names(wikiquotes)) ){
          cat(txt$errorWikiNames)
        }
-       if( digest(args$content[as.character(2:10)]) == "6acbbea3670ed430e670d76aa610c82e" &&
-           digest(args$attachment["Czech"][as.character(2:10)]) == "12e225626feffb3ba32a673b348bd0bc" ){
-         .pouch$level  <- 6
-         taskf(.pouch$level )
+       if( digest(args$content[as.character(2:10)]) == "6acbbea3670ed430e670d76aa610c82e"){
+         if (digest(args$attachment[["Czech"]][as.character(2:10)]) == "12e225626feffb3ba32a673b348bd0bc") {
+           .pouch$level  <- 6
+           taskf(.pouch$level )
+         } else cat(txt$errorLengths0)
        } else cat(txt$errorLengths)
      }
    }
