@@ -6,7 +6,7 @@ The english version of R package with Beta and Bit games
 To get started, install the latest version of **BetaBit** from GitHub:
 ```{Ruby}
 library(devtools)
-install_github("BetaBit/BetaBit")
+install_github("BetaBit/BetaBitRgame")
 ```
 Make sure you have [rtools](http://cran.r-project.org/bin/windows/Rtools/) installed on your computer.
 
