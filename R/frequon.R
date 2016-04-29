@@ -74,7 +74,7 @@ frequon <- function(...) {
            if(!all(names(args$content[letters])==letters))
              cat(txt$errorLetters)
            if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
-             .pouch$level <- 2  # a double assignement to be able to call hint on the 
+             .pouch$level <- 2  # a double assignement to be able to call hint on the
              # proper level of the game.
              taskf(.pouch$level )
            } else cat(txt$errorFrequencies)
@@ -120,7 +120,7 @@ frequon <- function(...) {
        .pouch$level  <- 5
        taskf(.pouch$level )
      } else cat(txt$errorBadAND)
-   } 
+   }
    ## 5. count the words' lengths
    if( tolower(args$subject) == subjects[6] ){
      if( ! any(names(args) %in% "attachment") ){
@@ -157,5 +157,7 @@ frequon <- function(...) {
 
  if(!is.null(args$hint) && args$hint == TRUE)
    hintf(.pouch$level)
+
+ return(invisible(NULL))
 }
 
