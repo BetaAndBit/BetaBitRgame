@@ -51,7 +51,7 @@ frequon <- function(...) {
                '1' = 're: frequencies',
                '2' = 're: transcription',
                '3' = 're: key',
-               '4' = 're: next text: and',
+               '4' = 're: next text',
                '5' = 're: lengths in the text',
                '6' = 're: language in and message',
                '7' = 're: password')
@@ -64,7 +64,11 @@ frequon <- function(...) {
      } else if(.pouch$level == 0) cat(txt$errorIntro)
    }
 
-   # 1. give a vector of frequencies
+   if (!(tolower(args$subject) %in% subjects)) {
+     cat("Check the mail subject. Something is wrong there!")
+  }
+
+  # 1. give a vector of frequencies
    if( tolower(args$subject) == subjects[2] ){
      if(is.null(names(args$content))){
        cat(txt$errorNoNAMES)
@@ -130,8 +134,8 @@ frequon <- function(...) {
        if( !all(names(args$attachment) %in% names(wikiquotes)) ){
          cat(txt$errorWikiNames)
        }
-       if( digest(args$content[as.character(1:13)]) == "0aac2628993a796da4b5408f8f9d0ef1" &&
-           digest(args$attachment[names(wikiquotes)]) == "6e6b01872252d622733fcc3e0d29eee6" ){
+       if( digest(args$content[as.character(2:10)]) == "6acbbea3670ed430e670d76aa610c82e" &&
+           digest(args$attachment["Czech"][as.character(2:10)]) == "12e225626feffb3ba32a673b348bd0bc" ){
          .pouch$level  <- 6
          taskf(.pouch$level )
        } else cat(txt$errorLengths)
