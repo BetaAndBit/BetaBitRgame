@@ -17,11 +17,11 @@ The \code{frequon} function is used for solving problems in the data-based game 
 Every time when some additional hints are needed one should add
 \code{hint=TRUE} argument to the \code{frequon} function.
 
-In this game you are in contact with group of people that are going to stop terrorists.
+In this game you are in contact with a group of people that are going to stop terrorists.
 You can communicate with them through \code{frequon} function.
 
-To each call add \code{subject} parameter that will point which message you are answering.
-Add \code{content} parameter. It'c value should match the request.
+In each call add \code{subject} parameter that will indicate which message you are answering.
+Add \code{content} parameter. It's value should match the request.
 
 ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 }
