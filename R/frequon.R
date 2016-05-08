@@ -78,7 +78,7 @@ frequon <- function(...) {
            if((length(na.omit(names(args$content[letters]))) != length(letters)) ||
               (!all(names(args$content[letters])==letters)))
              cat(txt$errorLetters)
-           if( digest(args$content[letters]) == 'cf9f65b80d343b29860fb6cf10b644d4' ){
+           if( digest(as.numeric(args$content[letters])) == '8a37375e11927ab4564a62598ae764dd' ){
              .pouch$level <- 2  # a double assignement to be able to call hint on the
              # proper level of the game.
              taskf(.pouch$level )
