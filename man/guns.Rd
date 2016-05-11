@@ -4,6 +4,10 @@
 \name{guns}
 \alias{and}
 \alias{guns}
+\alias{lyo}
+\alias{pcs}
+\alias{pistoale}
+\alias{roses}
 \title{The three messages to be decoded.}
 \description{
 The messages to be decoded in the game `frequon()`.

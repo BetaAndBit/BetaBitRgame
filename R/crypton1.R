@@ -19,10 +19,9 @@
 #' crypton()
 #' crypton(hint=TRUE)
 #' }
+#' @import dplyr
 #' @rdname crypton
 #' @export
-
-# @import dplyr
 
 crypton <- function(...) {
 

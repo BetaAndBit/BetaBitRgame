@@ -6,6 +6,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name guns
-#' @aliases and roses ginklai lyo pcs
+#' @aliases and roses pistoale lyo pcs
 NULL
 

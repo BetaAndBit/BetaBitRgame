@@ -3,6 +3,7 @@
 export(crypton)
 export(frequon)
 export(proton)
+import(dplyr)
 importFrom(digest,digest)
 importFrom(stats,filter)
 importFrom(stats,na.omit)
