@@ -136,7 +136,7 @@ frequon <- function(...) {
        if( !all(names(args$attachment) %in% names(wikiquotes)) ){
          cat(txt$errorWikiNames)
        }
-       if( digest(as.numeric(args$content[as.character(2:10)])) == "e0025e15a889ab54947e434bbdfb384e"){
+       if( digest(as.numeric(args$content[as.character(6:10)])) == "76daa6be16b9aba2d75032500a4b2741"){
          if (digest(as.numeric(args$attachment[["Czech"]][as.character(2:10)])) == "a976e39ca9e1eb15418cce4606575002") {
            .pouch$level  <- 6
            taskf(.pouch$level )
@@ -146,7 +146,7 @@ frequon <- function(...) {
    }
    ## 6. give a language
    if( tolower(args$subject) == subjects[7] ){
-     if( digest(tolower(args$content)) == '939ad54fa39990afd160056465120f72'){
+     if( digest(tolower(args$content)) == '4f808eee5fb8c3a585d76daf132e3990'){
        .pouch$level  <- 7
        taskf(.pouch$level )
      } else cat(txt$errorLanguage)
