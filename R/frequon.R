@@ -60,7 +60,7 @@ frequon <- function(...) {
 
  if ("subject" %in% names(args)) {
    if( tolower(args$subject) == subjects[1] ){
-     if( digest(args$content) == "6ba57621bc24fe10f21bc8ff7c178b39" ){
+     if( digest(args$content) == digest(roses) ){
        .pouch$level <- 1
        taskf(.pouch$level)
      } else if(.pouch$level == 0) cat(txt$errorIntro)
