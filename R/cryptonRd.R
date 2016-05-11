@@ -5,8 +5,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name birthdays
-#' @aliases birthdays
-#' @aliases messages
-#' @aliases user_ids
+#' @aliases birthdays messages user_ids
 NULL
 

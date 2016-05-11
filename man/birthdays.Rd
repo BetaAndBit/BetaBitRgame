@@ -3,6 +3,8 @@
 \docType{data}
 \name{birthdays}
 \alias{birthdays}
+\alias{messages}
+\alias{user_ids}
 \title{Datasets used in the crypton game.}
 \description{
 Datasets used in the crypton game.
