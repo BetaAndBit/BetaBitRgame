@@ -12,6 +12,5 @@
 #' @docType data
 #' @keywords datasets
 #' @name employees
-#' @usage data(employees)
 #' @format a data frame with 541 rows and three columns.
 NULL

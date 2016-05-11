@@ -6,7 +6,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name top1000passwords
-#' @usage data(top1000passwords)
 #' @format a character vector with 1000 elements.
 NULL
 

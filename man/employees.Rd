@@ -5,9 +5,6 @@
 \alias{employees}
 \title{The database with employees of Faculty of Electronics and Information Technology of Warsaw University of Technology.}
 \format{a data frame with 541 rows and three columns.}
-\usage{
-data(employees)
-}
 \description{
 The dataset describing names, surnames and faculty employees' logins.
 Note that it is an artificial dataset that imitates real database.
