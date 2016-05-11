@@ -136,7 +136,7 @@ frequon <- function(...) {
        if( !all(names(args$attachment) %in% names(BetaBit::wikiquotes)) ){
          cat(txt$errorWikiNames)
        }
-       if( digest(as.numeric(args$content[as.character(6:10)])) == "76daa6be16b9aba2d75032500a4b2741"){
+       if( digest(as.numeric(args$content[as.character(6:10)])) == "a99031c077f98cd93b351882400b7dbd"){
          if (digest(as.numeric(args$attachment[["Czech"]][as.character(2:10)])) == "a976e39ca9e1eb15418cce4606575002") {
            .pouch$level  <- 6
            taskf(.pouch$level )
