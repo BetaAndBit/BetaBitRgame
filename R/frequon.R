@@ -27,6 +27,8 @@
 #' frequon(hint=TRUE)
 #' }
 #' @rdname frequon
+#' @importFrom stats filter
+#' @importFrom stats na.omit
 #' @export
 frequon <- function(...) {
  args <- list(...)
