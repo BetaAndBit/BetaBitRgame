@@ -60,7 +60,7 @@ frequon <- function(...) {
 
  if ("subject" %in% names(args)) {
    if( tolower(args$subject) == subjects[1] ){
-     if( digest(args$content) == digest(roses) ){
+     if( digest(args$content) == digest(BetaBit::roses) ){
        .pouch$level <- 1
        taskf(.pouch$level)
      } else if(.pouch$level == 0) cat(txt$errorIntro)
@@ -133,7 +133,7 @@ frequon <- function(...) {
      if( ! any(names(args) %in% "attachment") ){
        cat(txt$errorAttachment)
      } else {
-       if( !all(names(args$attachment) %in% names(wikiquotes)) ){
+       if( !all(names(args$attachment) %in% names(BetaBit::wikiquotes)) ){
          cat(txt$errorWikiNames)
        }
        if( digest(as.numeric(args$content[as.character(6:10)])) == "76daa6be16b9aba2d75032500a4b2741"){
