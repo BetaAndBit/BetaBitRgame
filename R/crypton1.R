@@ -19,7 +19,8 @@
 #' crypton()
 #' crypton(hint=TRUE)
 #' }
-#' @import dplyr
+#' @importFrom dplyr arrange
+#' @importFrom dplyr %>%
 #' @rdname crypton
 #' @export
 
