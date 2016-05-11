@@ -1,6 +1,6 @@
 #' List with quotes in 18 languages.
 #'
-#' The named list with 18 languages. Based on wikiquotes.
+#' The named list with 18 languages. Based on https://wikiquote.org/.
 #'
 #' @docType data
 #' @keywords datasets
