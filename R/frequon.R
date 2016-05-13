@@ -123,7 +123,7 @@ frequon <- function(...) {
        }
      }
      In <- gsub("[^A-Z]","", toupper(args$content))
-     if( digest(In) == 'e876c26d9d8bad8028cefb95eb54df21' ){
+     if( digest(In) %in% c('e876c26d9d8bad8028cefb95eb54df21', 'faa1d78f830ccc8ba2a65f98de719ac2') ){
        .pouch$level  <- 5
        taskf(.pouch$level )
      } else cat(txt$errorBadAND)
