@@ -11,10 +11,10 @@ Description: Two games: proton and frequon. Both are console-based data-crunchin
   You have to solve four data-based puzzles to find the login and password.
   There are many ways to solve these puzzles. You may use loops, data filtering, ordering, aggregation or other tools.
   Only basics knowledge of R is required to play the game, yet the more functions you know, the more approaches you can try.
-  The knowledge of dplyr is not required but may be very helpful.
-  This game is linked with the ,,Pietraszko's Cave'' story available at http://biecek.pl/BetaBit/Warsaw.
+  The knowledge of 'dplyr' package is not required but may be very helpful.
+  This game is linked with the ,,Pietraszko's Cave'' story available at <http://biecek.pl/BetaBit/Warsaw>.
   It's a part of Beta and Bit series.
-  You will find more about the Beta and Bit series at http://biecek.pl/BetaBit.
+  You will find more about the Beta and Bit series at <http://betabit.wiki>.
 Depends:
     R (>= 3.0.0)
 Imports:
