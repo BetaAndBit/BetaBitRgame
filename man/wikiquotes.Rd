@@ -9,7 +9,7 @@
 data(wikiquotes)
 }
 \description{
-The named list with 18 languages. Based on https://wikiquote.org/.
+The named list with 18 languages. Based on <https://wikiquote.org/>.
 }
 \keyword{datasets}
 
