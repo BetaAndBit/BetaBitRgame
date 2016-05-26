@@ -123,7 +123,7 @@ frequon <- function(...) {
        }
      }
      In <- gsub("[^A-Z]","", toupper(args$content))
-     if( digest(In) %in% c('e876c26d9d8bad8028cefb95eb54df21', '54bac78ea14b3ddd536318edbd629ad4', digest(gsub("[^A-Z]","", toupper(pcs)))) ){
+     if( digest(In) %in% c('e876c26d9d8bad8028cefb95eb54df21', '54bac78ea14b3ddd536318edbd629ad4', digest(gsub("[^A-Z]","", toupper(BetaBit::pcs)))) ){
        .pouch$level  <- 5
        taskf(.pouch$level )
      } else cat(txt$errorBadAND)
