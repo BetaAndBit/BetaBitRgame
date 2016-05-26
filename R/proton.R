@@ -27,10 +27,8 @@
 #' Przemyslaw Biecek, \email{przemyslaw.biecek@@gmail.com}, SmarterPoland.pl Foundation.
 #'
 #' @examples
-#' \dontrun{
 #' proton()
 #' proton(hint=TRUE)
-#' }
 #' @rdname proton
 #' @importFrom digest digest
 #' @export

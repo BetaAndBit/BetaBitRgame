@@ -32,10 +32,8 @@ In order to log into a server different from Proton one should pass
 ,,The Proton Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 }
 \examples{
-\dontrun{
 proton()
 proton(hint=TRUE)
-}
 }
 \author{
 Przemyslaw Biecek, \email{przemyslaw.biecek@gmail.com}, SmarterPoland.pl Foundation.

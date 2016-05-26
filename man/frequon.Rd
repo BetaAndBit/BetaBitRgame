@@ -26,10 +26,8 @@ Add \code{content} parameter. It's value should match the request.
 ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 }
 \examples{
-\dontrun{
 frequon()
 frequon(hint=TRUE)
-}
 }
 \author{
 Katarzyna Fak - the idea and the implementation,

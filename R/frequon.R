@@ -22,10 +22,8 @@
 #' Przemyslaw Biecek - comments and the integration with this package.
 #'
 #' @examples
-#' \dontrun{
 #' frequon()
 #' frequon(hint=TRUE)
-#' }
 #' @rdname frequon
 #' @importFrom stats filter
 #' @importFrom stats na.omit
