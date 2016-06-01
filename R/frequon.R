@@ -66,6 +66,7 @@ frequon <- function(...) {
 
    if (!(tolower(args$subject) %in% subjects)) {
      cat("Check the mail subject. Something is wrong there!")
+     return()
   }
 
   # 1. give a vector of frequencies
@@ -159,7 +160,7 @@ frequon <- function(...) {
  if( length(args)>0 && !("content" %in% names(args)) && !('hint' %in% names(args)))
    cat(txt$errorContent)
  if( length(args)>0 && !("subject" %in% names(args)) && !('hint' %in% names(args)))
-   cat(txt$errorSubject)
+   cat("Did you send this message without subject?\n")
 
  if(!is.null(args$hint) && args$hint == TRUE)
    hintf(.pouch$level)
