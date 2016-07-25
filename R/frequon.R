@@ -18,8 +18,10 @@
 #' ,,The Frequon Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 #'
 #' @author
-#' Katarzyna Fak - the idea and the implementation,
-#' Przemyslaw Biecek - comments and the integration with this package.
+#' \itemize{
+#'   \item{Katarzyna Fak - the idea and the implementation,}
+#'   \item{Przemyslaw Biecek - comments and the integration with the `BetaBit` package.}
+#' }
 #'
 #' @examples
 #' frequon()
