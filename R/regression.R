@@ -184,7 +184,7 @@ regression <- function(...) {
                        ifelse(functionsUsed == "log2", "twice", "ten times"), ".")
         } else if (length(functionsUsed) == 1 &
                    all(functionsUsed %in% "log")) {
-          commentReplace = "It's nice you decided to use logarithmic transformation. However if you used base 2 or 10 instead of e, it would be a little easier to interpret the slope parameter coefficient value. It looks quite good, but there is still a little problem. Perhaps there is something wrong with a way you determine value of SCHOOL_ID on the basis of the names (or perhaps order) of the model contrasts (dummie variables). Please, check what values of SCHOOL_ID appear in the dataset and compare with how they are described in names of the model contrasts."
+          commentReplace = "It's nice you decided to use logarithmic transformation. However if you used base 2 or 10 instead of e, it would be a little easier to interpret the slope parameter coefficient value. It looks quite good, but there is still a little problem. Perhaps there is something wrong with a way you determine value of SCHOOL_ID on the basis of the names (or perhaps order) of the model contrasts (dummy variables). Please, check what values of SCHOOL_ID appear in the dataset and compare with how they are described in names of the model contrasts."
         } else {
           commentReplace = paste0(
             "Note however that if you used base 2 logarithm to ",
@@ -201,7 +201,7 @@ regression <- function(...) {
         cat(textsRegression$task4)
         return(invisible(TRUE))
       } else {
-        cat("Ufortunately after this transformation `income` is still insignifficant.\n")
+        cat("Unfortunately after this transformation `income` is still insignifficant.\n")
         return(invisible(FALSE))
       }
     # zadanie 4. - wspolliniowosc
