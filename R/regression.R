@@ -59,7 +59,7 @@
 regression <- function(...) {
   args = list(...)
 
-  textsRegression = dcode(.regression.)
+  textsRegression = as.list(dcode(.regression.))
 
   if (length(args) == 0) {
     cat(textsRegression$regressionInit)
