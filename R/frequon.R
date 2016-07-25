@@ -46,7 +46,7 @@ frequon <- function(...) {
  if( length(args) == 0 ){
    cat(txt$intro)
    .pouch$level <- 0
-   return(invisible(NULL))
+   return(invisible(TRUE))
  }
 
  subjects <- c('0' = 're: interested?',
@@ -68,8 +68,8 @@ frequon <- function(...) {
 
    if (!(tolower(args$subject) %in% subjects)) {
      cat("Check the mail subject. Something is wrong there!")
-     return()
-  }
+     return(invisible(FALSE))
+   }
 
   # 1. give a vector of frequencies
    if( tolower(args$subject) == subjects[2] ){
@@ -85,6 +85,7 @@ frequon <- function(...) {
              .pouch$level <- 2  # a double assignement to be able to call hint on the
              # proper level of the game.
              taskf(.pouch$level )
+             return(invisible(TRUE))
            } else cat(txt$errorFrequencies)
          }
      }
@@ -95,6 +96,7 @@ frequon <- function(...) {
      if( digest(In) == 'd5bc6f3d64e0199e08d029ee25d835a2' ){
        .pouch$level <- 3
        taskf(.pouch$level )
+       return(invisible(TRUE))
      } else cat(txt$errorDecipher)
    }
    ## 3. translate ALL of the letters (find a complete key)
@@ -110,6 +112,7 @@ frequon <- function(...) {
              if( digest(In[-c(2, 21, 9, 11)]) == 'e81104a8409e08ab2eaaa41fe6645056' ){
                .pouch$level  <- 4
                taskf(.pouch$level )
+               return(invisible(TRUE))
              } else cat(txt$errorBadKey)
            }
        }
@@ -127,6 +130,7 @@ frequon <- function(...) {
      if( digest(In) %in% c('e876c26d9d8bad8028cefb95eb54df21', '54bac78ea14b3ddd536318edbd629ad4', digest(gsub("[^A-Z]","", toupper(BetaBit::pcs)))) ){
        .pouch$level  <- 5
        taskf(.pouch$level )
+       return(invisible(TRUE))
      } else cat(txt$errorBadAND)
    }
    ## 5. count the words' lengths
@@ -141,6 +145,7 @@ frequon <- function(...) {
          if (digest(as.numeric(args$attachment[["Czech"]][as.character(2:10)])) == "a976e39ca9e1eb15418cce4606575002") {
            .pouch$level  <- 6
            taskf(.pouch$level )
+           return(invisible(TRUE))
          } else cat(txt$errorLengths0)
        } else cat(txt$errorLengths)
      }
@@ -150,23 +155,35 @@ frequon <- function(...) {
      if( digest(tolower(args$content)) == '4f808eee5fb8c3a585d76daf132e3990'){
        .pouch$level  <- 7
        taskf(.pouch$level )
+       return(invisible(TRUE))
      } else cat(txt$errorLanguage)
    }
    ## 7. give a password
    if( tolower(args$subject) == subjects[8] ){
-     if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' )
-       cat(txt$outro) else cat(txt$errorEnd)
+     if( digest(args$content) == 'ba61e613c2207f0a81e0697914f3dc96' ) {
+       cat(txt$outro)
+       return(invisible(TRUE))
+     } else {
+         cat(txt$errorEnd)
+         return(invisible(FALSE))
+       }
    }
  }
 
- if( length(args)>0 && !("content" %in% names(args)) && !('hint' %in% names(args)))
+ if( length(args)>0 && !("content" %in% names(args)) && !('hint' %in% names(args))) {
    cat(txt$errorContent)
- if( length(args)>0 && !("subject" %in% names(args)) && !('hint' %in% names(args)))
+   return(invisible(FALSE))
+ }
+ if( length(args)>0 && !("subject" %in% names(args)) && !('hint' %in% names(args))) {
    cat("Did you send this message without subject?\n")
+   return(invisible(FALSE))
+ }
 
- if(!is.null(args$hint) && args$hint == TRUE)
+ if(!is.null(args$hint) && args$hint == TRUE) {
    hintf(.pouch$level)
+   return(invisible(TRUE))
+ }
 
- return(invisible(NULL))
+ return(invisible(FALSE))
 }
 
