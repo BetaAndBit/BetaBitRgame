@@ -67,6 +67,7 @@ regression <- function(...) {
   }
   if ("subject" %in% names(args)) {
     args$subject = tolower(args$subject)
+    . = list(structure(c(-0.143966665283887, -0.137825041716732, -0.157386920578125), .Names = c("MATH_2009", "READ_2009", "SCIE_2009")), "highconf", NULL, list(c("RAVEN_WYN", "STAI_C_WYN", "ZAMPS_WYN"), c("csesi", "STAI_C_WYN", "ZAMPS_WYN")), c(-0.6375, 1.1661, 1.5848, 0.2752, 1.26, 0.2914, 0.4058, 0.2478, 0.7394, 0.8916, 0.0043, 0.7219, -0.282, -1.2267, 1.5022, 0.8074, 1.1414, 0.8687, -1.3389, -0.0902, 4.945, 0.5476, -0.2839, -0.1818, -0.4485, -0.074, 0.2379, 0.249, 2.4501, -0.1493, -0.6062, -0.4345, -0.6615, 0.1084, 0.4113, 1.2611, -0.3029, 0.5105, 0.3736, 0.1127, -0.1324, 0.8799, -1.9888, 1.1488, -0.1969, 0.3077, 0.8966, -0.3707, 1.8101, 0.0376, 0.622, 1.0357, -0.8864, 1.3858, 0.8317, -0.4309, 0.4432, 0.4627, -0.0403, 0.4621, -1.5229, 0.7644, 0.0242, 1.0579, 0.4841, -0.9998, 0.9073, -0.0962, 0.4208, 1.1767, 0.5754, 1.4375, -1.6987, 1.8664, 0.5893, 0.837, 0.0181, -0.1621, -0.0472, 0.5972, -0.1009, -0.0312, -1.5385, 0.825, -0.9025, 0.9718, 0.0498, 0.4716, 0.9132, 2.2402, 1.6773, 0.3976, 0.9948, 3.1998, -2.0272, 2.1335, 1.1378, 0.7727, -0.9487, 1.6824, 0.8196, -0.9819, -1.1, -0.8967, -1.7019, -0.7351, 2.1406, -0.7031, 0.7061, 1.4704, 0.575, -2.271, -0.2446, 0.677, 1.0731, 0.5211, -1.3844, -0.3239, 1.9043, 1.6658,-1.4841, 2.8874, 2.064, -0.4097, 1.582, -0.5039, 1.2635, 0.4873, -0.2557, -0.4544, -0.4648, 1.3875, -1.7898, 1.2693, 2.4197, 3.1531, 0.3177, -1.7153, -1.4094, 0.2531, 0.2441, -0.4066, 0.0512, -0.4713, -0.0557, 5.334, 0.0388, 0.0423, 1.3605, -0.2314, 1.4575, 0.5591, -0.5954, 0.2199, 3.2709, 0.1701, -1.3674, -0.3077, -0.1179, -0.7117, -1.2782, -0.3209, -0.983, -1.298, 1.6415, 3.7454, 1.2008, 1.6935, 0.1726, -0.2236, -0.4053, 0.1983, -0.1504, 4.4081, 0.3223, 0.4518, -1.0513, -0.2394, 3.6358, 0.9655, 0.2501, -0.0744, -1.3324, 1.8961, -0.4012, 1.5268, 4.609, -0.3739, 0.7202, -0.5722, 0.3523, 1.1486, 1.5051, 1.7594, 2.9057, 1.0941, -1.1194), list(c(43, 61, 73, 83, 94, 95, 96, 105, 117, 133, 136, 146, 155, 190), c(43, 61, 73, 83, 94, 95, 96, 105, 112, 117, 133, 136, 146, 155, 190)), 24446455.2489998)
     if (args$subject == "summer internship") {
       if ("hint" %in% names(args)) {
         cat(textsRegression$hint0)
@@ -103,7 +104,7 @@ regression <- function(...) {
         args$content = args$content[order(names(args$content))]
       }
       if (all.equal(unname(args$content),
-                    unname(BetaBit::answers[[1]]))[1] %in% TRUE) {
+                    unname(.[[1]]))[1] %in% TRUE) {
         cat(textsRegression$task2)
         return(invisible(TRUE))
       } else {
@@ -128,7 +129,7 @@ regression <- function(...) {
         return(invisible(FALSE))
       }
       if (all.equal(unname(args$content),
-                    BetaBit::answers[[2]])[1] %in% TRUE) {
+                    .[[2]])[1] %in% TRUE) {
         cat(textsRegression$task3)
         return(invisible(TRUE))
       }
@@ -229,7 +230,7 @@ regression <- function(...) {
         return(invisible(FALSE))
       } else if (
         any(sapply(
-          BetaBit::answers[[4]],
+          .[[4]],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
@@ -269,7 +270,7 @@ regression <- function(...) {
       if (
         all.equal(
           args$content$par_hisei,
-          BetaBit::answers[[5]],
+          .[[5]],
           tolerance = 0.001
         )[1] %in% TRUE
       ) {
@@ -300,12 +301,12 @@ regression <- function(...) {
         return(invisible(FALSE))
       } else if (
         any(sapply(
-          BetaBit::answers[[6]][1:2],
+          .[[6]][1:2],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
       ) {
-        if (length(args$content) == length(BetaBit::answers[[6]][[1]])) {
+        if (length(args$content) == length(.[[6]][[1]])) {
           commentReplace = "Note however, that you treated the mean value of slope parameters as it was estimated without any error. Do you know what can you do to account for this error while checking significance of the differences?"
         } else {
           commentReplace = "That's nice you took into account that the mean value of slope parameters is also estimated with error."
@@ -319,7 +320,7 @@ regression <- function(...) {
         return(invisible(TRUE))
       } else if (
         any(sapply(
-          BetaBit::answers[[6]][3:4],
+          .[[6]][3:4],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
@@ -402,7 +403,7 @@ regression <- function(...) {
       if (is.null(mTemp)) {
         return(invisible(FALSE))
       }
-      if (deviance(mTemp) <= BetaBit::answers[[7]]) {
+      if (deviance(mTemp) <= .[[7]]) {
         cat(textsRegression$congratulations)
         return(invisible(TRUE))
       } else {
