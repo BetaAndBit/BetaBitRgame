@@ -38,7 +38,7 @@ frequon <- function(...) {
    cat(txt[[paste0("task",level)]])
  }
 
- txt <- as.list(dcode(.pouch$f))
+ txt <- as.list(dcode(.frequon.))
 
  # plain start
  if( length(args) == 0 ){
