@@ -107,7 +107,7 @@ frequon <- function(...) {
              ## if only they are correct.
              ord <- order( strsplit(args$content['old'], "")[[1]] )
              In <- strsplit(args$content['new'], "")[[1]][ord]
-             if( digest(In[-c(2, 21, 9)]) == '48e4199ae0193ca8abcdf74c2e2bfd6a' ){
+             if( digest(In[-c(2, 21, 9, 11)]) == 'e81104a8409e08ab2eaaa41fe6645056' ){
                .pouch$level  <- 4
                taskf(.pouch$level )
              } else cat(txt$errorBadKey)
