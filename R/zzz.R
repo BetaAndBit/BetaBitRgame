@@ -10,6 +10,7 @@ It's a function so do not forget about parentheses!
 
 1. proton()
 2. frequon()
+3. regression()
 "
 
      packageStartupMessage(BB.start)
