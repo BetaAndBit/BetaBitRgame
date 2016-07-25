@@ -30,12 +30,12 @@ Technical hints will point out R packages and/or functions which might help
 you to solve the task while "normal" hints provide you with methodological
 advices.
 
-In this game you are helping a Professor Pearson.
+In this game you are helping Professor Pearson.
 You can communicate with him through the \code{regression} function.
 
 In each call include the \code{subject} parameter (indicating which task
 you are trying to answer) and the \code{content} parameter (providing
-information professor Pearson is asking you for in a given task).
+information Professor Pearson is asking you for in a given task).
 
 Data used in the game comes from the study of Polish upper-secondary
 schools first grade students. It was conducted together with the
