@@ -58,6 +58,7 @@
 #' @export
 regression <- function(...) {
   args = list(...)
+
   textsRegression = dcode(.regression.)
 
   if (length(args) == 0) {
@@ -102,7 +103,7 @@ regression <- function(...) {
         args$content = args$content[order(names(args$content))]
       }
       if (all.equal(unname(args$content),
-                    unname(zadaniaRegresja::answers[[1]]))[1] %in% TRUE) {
+                    unname(BetaBit::answers[[1]]))[1] %in% TRUE) {
         cat(textsRegression$task2)
         return(invisible(TRUE))
       } else {
@@ -127,7 +128,7 @@ regression <- function(...) {
         return(invisible(FALSE))
       }
       if (all.equal(unname(args$content),
-                    zadaniaRegresja::answers[[2]])[1] %in% TRUE) {
+                    BetaBit::answers[[2]])[1] %in% TRUE) {
         cat(textsRegression$task3)
         return(invisible(TRUE))
       }
@@ -156,7 +157,7 @@ regression <- function(...) {
         return(invisible(FALSE))
       }
       incomeTr = tryCatch(
-        eval(args$content[1], zadaniaRegresja::FSW),
+        eval(args$content[1], BetaBit::FSW),
         error = function(e) {
           cat(
             "Trying to evaluate your expression: `",
@@ -171,7 +172,7 @@ regression <- function(...) {
       if (is.null(incomeTr)) {
         return(invisible(FALSE))
       }
-      mTemp = with(zadaniaRegresja::FSW, lm(READ_2009 ~ cultpos + incomeTr))
+      mTemp = with(BetaBit::FSW, lm(READ_2009 ~ cultpos + incomeTr))
       if (summary(mTemp)$coef[3, 4] <= 0.05) {
         functionsUsed = setdiff(all.names(args$content[1]), "income")
         if (
@@ -228,7 +229,7 @@ regression <- function(...) {
         return(invisible(FALSE))
       } else if (
         any(sapply(
-          zadaniaRegresja::answers[[4]],
+          BetaBit::answers[[4]],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
@@ -239,7 +240,7 @@ regression <- function(...) {
       varsTemp = setdiff(varsTemp, args$content)
       varsTemp = sub("income", "log(income)", varsTemp)
       varsTemp = formula(paste("READ_2009 ~ ", paste(varsTemp, collapse = "+")))
-      mTemp = lm(varsTemp, zadaniaRegresja::FSW)
+      mTemp = lm(varsTemp, BetaBit::FSW)
       if (any(summary(mTemp)$coef[-1, 4] > 0.05)) {
         cat("Unfortunately, there is/are still some insignificant parameter(s) in the model.\n")
         print(summary(mTemp))
@@ -268,7 +269,7 @@ regression <- function(...) {
       if (
         all.equal(
           args$content$par_hisei,
-          zadaniaRegresja::answers[[5]],
+          BetaBit::answers[[5]],
           tolerance = 0.001
         )[1] %in% TRUE
       ) {
@@ -294,17 +295,17 @@ regression <- function(...) {
       } else if (!is.numeric(args$content)) {
         cat("Argument `content` must be a vector of mode `numeric`.\n")
         return(invisible(FALSE))
-      } else if (!all(args$content %in% zadaniaRegresja::FSW$SCHOOL_ID)) {
+      } else if (!all(args$content %in% BetaBit::FSW$SCHOOL_ID)) {
         cat("Some values you gave don't appear in `FSW$SCHOOL_ID`.\n")
         return(invisible(FALSE))
       } else if (
         any(sapply(
-          zadaniaRegresja::answers[[6]][1:2],
+          BetaBit::answers[[6]][1:2],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
       ) {
-        if (length(args$content) == length(zadaniaRegresja::answers[[6]][[1]])) {
+        if (length(args$content) == length(BetaBit::answers[[6]][[1]])) {
           commentReplace = "Note however, that you treated the mean value of slope parameters as it was estimated without any error. Do you know what can you do to account for this error while checking significance of the differences?"
         } else {
           commentReplace = "That's nice you took into account that the mean value of slope parameters is also estimated with error."
@@ -318,7 +319,7 @@ regression <- function(...) {
         return(invisible(TRUE))
       } else if (
         any(sapply(
-          zadaniaRegresja::answers[[6]][3:4],
+          BetaBit::answers[[6]][3:4],
           function(x, y) {return(all(y %in% x))},
           y = args$content
         ))
@@ -366,7 +367,7 @@ regression <- function(...) {
         }
         varsTemp = lapply(args$vars, function(x) {
           return(tryCatch(
-            eval(x, zadaniaRegresja::FSW),
+            eval(x, BetaBit::FSW),
             error = function(e) {
               cat(
                 "Trying to evaluate your expression: `",
@@ -382,13 +383,13 @@ regression <- function(...) {
         if (any(sapply(varsTemp, is.null))) {
           return(invisible(FALSE))
         }
-        dataTemp = cbind(zadaniaRegresja::FSW, as.data.frame(varsTemp))
+        dataTemp = cbind(BetaBit::FSW, as.data.frame(varsTemp))
       } else {
         if (!all(all.vars(args$content[[3]]) %in% "RAVEN_AGE")) {
           cat("No other variable than `RAVEN_AGE` can appear on the right side the model formula unless you provide expressions describing how to compute them by specifying the `vars` argument.\n")
           return(invisible(FALSE))
         }
-        dataTemp = zadaniaRegresja::FSW
+        dataTemp = BetaBit::FSW
       }
       mTemp = tryCatch(
         lm(args$content, dataTemp),
@@ -401,7 +402,7 @@ regression <- function(...) {
       if (is.null(mTemp)) {
         return(invisible(FALSE))
       }
-      if (deviance(mTemp) <= zadaniaRegresja::answers[[7]]) {
+      if (deviance(mTemp) <= BetaBit::answers[[7]]) {
         cat(textsRegression$congratulations)
         return(invisible(TRUE))
       } else {
