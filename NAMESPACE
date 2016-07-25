@@ -2,6 +2,10 @@
 
 export(frequon)
 export(proton)
+export(regression)
 importFrom(digest,digest)
+importFrom(stats,deviance)
 importFrom(stats,filter)
+importFrom(stats,formula)
+importFrom(stats,lm)
 importFrom(stats,na.omit)

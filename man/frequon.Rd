@@ -30,7 +30,9 @@ frequon()
 frequon(hint=TRUE)
 }
 \author{
-Katarzyna Fak - the idea and the implementation,
-Przemyslaw Biecek - comments and the integration with this package.
+\itemize{
+  \item{Katarzyna Fak - the idea and the implementation,}
+  \item{Przemyslaw Biecek - comments and the integration with the `BetaBit` package.}
+}
 }
 
