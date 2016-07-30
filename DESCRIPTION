@@ -25,4 +25,6 @@ Imports:
 License: GPL-2
 LazyData: true
 Encoding: UTF-8
+URL: http://betabit.wiki
+BugReports: https://github.com/BetaAndBit/BetaBitRgame/issues
 RoxygenNote: 5.0.1
