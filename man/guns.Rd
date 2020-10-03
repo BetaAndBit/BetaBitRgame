@@ -2,16 +2,15 @@
 % Please edit documentation in R/messages.R
 \docType{data}
 \name{guns}
-\alias{and}
 \alias{guns}
+\alias{and}
+\alias{roses}
+\alias{pistoale}
 \alias{lyo}
 \alias{pcs}
-\alias{pistoale}
-\alias{roses}
 \title{The three messages to be decoded.}
 \description{
 The messages to be decoded in the game `frequon()`.
 How to access it? You have to figure out this by yourself.
 }
 \keyword{datasets}
-

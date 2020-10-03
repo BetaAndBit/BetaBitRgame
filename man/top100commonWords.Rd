@@ -4,7 +4,9 @@
 \name{top100commonWords}
 \alias{top100commonWords}
 \title{The vector of 100 most common words in English.}
-\format{a character vector with 100 elements.}
+\format{
+a character vector with 100 elements.
+}
 \usage{
 data(top100commonWords)
 }
@@ -14,4 +16,3 @@ It is sorted by the frequency of usage.
 May be used to refine the transliteraton.
 }
 \keyword{datasets}
-

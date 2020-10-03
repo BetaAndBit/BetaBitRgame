@@ -65,4 +65,3 @@ regression(techHint = TRUE)
   \item{Przemyslaw Biecek - comments and the integration with the `BetaBit` package.}
 }
 }
-

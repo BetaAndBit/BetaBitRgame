@@ -4,10 +4,11 @@
 \name{top1000passwords}
 \alias{top1000passwords}
 \title{The vector of 1000 most popular passwords.}
-\format{a character vector with 1000 elements.}
+\format{
+a character vector with 1000 elements.
+}
 \description{
 The character vector of 1000 most commonly used passwords.
 It is sorted by the frequency of password's usage. First passwords in the vector are the most frequently used.
 }
 \keyword{datasets}
-

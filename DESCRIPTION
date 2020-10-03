@@ -22,9 +22,15 @@ Depends:
     R (>= 3.0.0)
 Imports:
     digest
+Suggests:
+    XML,
+    sp,
+    raster,
+    DALEX,
+    ggplot2
 License: GPL-2
 LazyData: true
 Encoding: UTF-8
 URL: http://betabit.wiki
 BugReports: https://github.com/BetaAndBit/BetaBitRgame/issues
-RoxygenNote: 5.0.1
+RoxygenNote: 7.1.1

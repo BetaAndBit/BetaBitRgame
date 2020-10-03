@@ -5,10 +5,11 @@
 \alias{varLabels}
 \title{The data frame containng labels of the variables from \code{dataDNiP} and
 \code{DNiP} datasets.}
-\format{data frame: 54 obs. of 2 variables}
+\format{
+data frame: 54 obs. of 2 variables
+}
 \description{
 The data frame containng labels of the variables from \code{dataDNiP} and
 \code{DNiP} datasets.
 }
 \keyword{datasets}
-

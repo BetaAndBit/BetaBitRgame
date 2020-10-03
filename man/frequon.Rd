@@ -35,4 +35,3 @@ frequon(hint=TRUE)
   \item{Przemyslaw Biecek - comments and the integration with the `BetaBit` package.}
 }
 }
-

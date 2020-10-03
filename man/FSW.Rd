@@ -4,7 +4,9 @@
 \name{FSW}
 \alias{FSW}
 \title{The data from the study of Polish upper-secondary schools students.}
-\format{data frame: 3796 obs. of 54 variables}
+\format{
+data frame: 3796 obs. of 54 variables
+}
 \description{
 It was conducted firstly in the same time as PISA 2009 study, with use of the
 same cognitive tests and questionnaires as in PISA 2009, but on a different
@@ -21,4 +23,3 @@ Polish Academy of Sciences.
 the game.}
 }
 \keyword{datasets}
-

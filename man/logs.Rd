@@ -4,7 +4,9 @@
 \name{logs}
 \alias{logs}
 \title{The history of logs into the Proton server}
-\format{a data frame with 59366 rows and 3 columns.}
+\format{
+a data frame with 59366 rows and 3 columns.
+}
 \usage{
 data(logs)
 }
@@ -18,4 +20,3 @@ The subsequent columns in this dataset describe:
 }
 }
 \keyword{datasets}
-

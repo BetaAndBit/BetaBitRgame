@@ -4,7 +4,9 @@
 \name{employees}
 \alias{employees}
 \title{The database with employees of Faculty of Electronics and Information Technology of Warsaw University of Technology.}
-\format{a data frame with 541 rows and three columns.}
+\format{
+a data frame with 541 rows and three columns.
+}
 \description{
 The dataset describing names, surnames and faculty employees' logins.
 Note that it is an artificial dataset that imitates real database.
@@ -16,4 +18,3 @@ The subsequent columns in this dataset describe:
 }
 }
 \keyword{datasets}
-

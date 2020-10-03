@@ -4,7 +4,9 @@
 \name{EnglishLetterFrequency}
 \alias{EnglishLetterFrequency}
 \title{The vector of letter frequencies in English.}
-\format{a named vector with 26 elements.}
+\format{
+a named vector with 26 elements.
+}
 \usage{
 data(EnglishLetterFrequency)
 }
@@ -14,4 +16,3 @@ It is sorted by the frequency of usage.
 May be used to refine the transliteraton.
 }
 \keyword{datasets}
-

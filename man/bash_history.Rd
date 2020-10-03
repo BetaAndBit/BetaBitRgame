@@ -4,7 +4,9 @@
 \name{bash_history}
 \alias{bash_history}
 \title{The history of recently executed commands.}
-\format{a character vector with 19913 elements.}
+\format{
+a character vector with 19913 elements.
+}
 \usage{
 data(bash_history)
 }
@@ -14,4 +16,3 @@ Each element of the vector consists of command's name and command's arguments
 separated with a space.
 }
 \keyword{datasets}
-

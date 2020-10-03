@@ -38,4 +38,3 @@ proton(hint=TRUE)
 \author{
 Przemyslaw Biecek, \email{przemyslaw.biecek@gmail.com}, SmarterPoland.pl Foundation.
 }
-

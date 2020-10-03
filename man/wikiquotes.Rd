@@ -4,7 +4,9 @@
 \name{wikiquotes}
 \alias{wikiquotes}
 \title{List with quotes in 18 languages.}
-\format{a named list with 18 elements.}
+\format{
+a named list with 18 elements.
+}
 \usage{
 data(wikiquotes)
 }
@@ -12,4 +14,3 @@ data(wikiquotes)
 The named list with 18 languages. Based on <https://wikiquote.org/>.
 }
 \keyword{datasets}
-
