@@ -87,7 +87,7 @@ plot.gpx_file <- function(x, ...,
       }
       if (type == "difference") {
          pl <- ggplot2::ggplot(x, ggplot2::aes(dist, dd, color = route, group = name)) +
-            ggplot2::geom_smooth(se= FALSE, span= 0.2) +
+            ggplot2::geom_smooth(se= FALSE, span= 0.2, method = "loess", formula = y~x) +
             DALEX::theme_ema() +
             ggplot2::geom_hline(yintercept = 0) +
             ggplot2::ylab("Zmiana wysokosci [m/m]") +
@@ -119,7 +119,7 @@ plot.gpx_file <- function(x, ...,
       }
       if (type == "difference") {
          pl <- ggplot2::ggplot(x, ggplot2::aes(dist, dd)) +
-            ggplot2::geom_smooth(color = color, se= FALSE, span= 0.2) +
+            ggplot2::geom_smooth(se= FALSE, span= 0.2, method = "loess", formula = y~x) +
             DALEX::theme_ema() +
             ggplot2::geom_hline(yintercept = 0) +
             ggplot2::ylab("Zmiana wysokosci [m/m]") +
