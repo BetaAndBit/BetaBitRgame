@@ -1,4 +1,4 @@
-#' @title Read GPX File
+#' Read GPX File
 #'
 #' Reads data in GPX form.
 #' Examples of tourist routes saved in this format can be downloaded from

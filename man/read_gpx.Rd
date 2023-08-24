@@ -3,11 +3,7 @@
 \name{read_gpx}
 \alias{read_gpx}
 \alias{plot.gpx_file}
-\title{Read GPX File
-
-Reads data in GPX form.
-Examples of tourist routes saved in this format can be downloaded from
-mapa-turystyczna.pl.}
+\title{Read GPX File}
 \usage{
 read_gpx(path, name = NULL, uniform = TRUE, dx = 25, span = 0.1)
 
@@ -33,8 +29,6 @@ read_gpx(path, name = NULL, uniform = TRUE, dx = 25, span = 0.1)
 \item{color}{names of colors for lines}
 }
 \description{
-Read GPX File
-
 Reads data in GPX form.
 Examples of tourist routes saved in this format can be downloaded from
 mapa-turystyczna.pl.

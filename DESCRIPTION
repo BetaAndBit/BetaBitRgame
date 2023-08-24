@@ -1,6 +1,6 @@
 Package: BetaBit
 Title: Mini Games from Adventures of Beta and Bit
-Version: 1.4
+Version: 2.2
 Authors@R: c(
     person("Przemyslaw", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
     person("Witold", "Chodor", email = "witoldchodor@gmail.com", role = c("trl")),
@@ -17,9 +17,9 @@ Description: Three games: proton, frequon and regression. Each one is a console-
   In regression you will test your modeling skills in a series of eight sub-tasks.
   Try only if ANOVA is your close friend.
   It's a part of Beta and Bit project.
-  You will find more about the Beta and Bit project at <https://betabit.wiki>.
+  You will find more about the Beta and Bit project at <https://github.com/BetaAndBit/Charts>.
 Depends:
-    R (>= 3.0.0)
+    R (>= 4.0.0)
 Imports:
     digest
 Suggests:
@@ -27,10 +27,10 @@ Suggests:
     sp,
     raster,
     DALEX,
-    ggplot2
+    ggplot2,
+    ggthemes
 License: GPL-2
 LazyData: true
 Encoding: UTF-8
-URL: https://betabit.wiki
-BugReports: https://github.com/BetaAndBit/BetaBitRgame/issues
-RoxygenNote: 7.1.1
+URL: https://github.com/BetaAndBit/Charts
+RoxygenNote: 7.2.3
